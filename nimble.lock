@@ -1,0 +1,219 @@
+{
+  "version": 2,
+  "packages": {
+    "nimblas": {
+      "version": "0.3.1",
+      "vcsRevision": "93ffdd705496990983eefa0507d52f6a6c533ca7",
+      "url": "https://github.com/andreaferretti/nimblas",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "e1ecdea4bb8176f12d66efd4aa0c7b3bea970027"
+      }
+    },
+    "nimlapack": {
+      "version": "0.3.1",
+      "vcsRevision": "231430b3d2156f5cbe8fe16bb8967cd9a93964c5",
+      "url": "https://github.com/andreaferretti/nimlapack",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "fcb25795c6fb43f9251b7f34c3ad84c39e645afd"
+      }
+    },
+    "nimcuda": {
+      "version": "0.2.2",
+      "vcsRevision": "319b8deb31812fd9277c6232f0ae3fca31c6d55d",
+      "url": "https://github.com/andreaferretti/nimcuda",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "630aaaad24b7f817f6c576bca246141919870cb8"
+      }
+    },
+    "opencl": {
+      "version": "1.0.1",
+      "vcsRevision": "7b138ac19d7f5452a74742392ffadac3d26ee397",
+      "url": "https://github.com/nim-lang/opencl",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "89c70044ee474834a4f7dcd6bf05a9082b0886bb"
+      }
+    },
+    "nimcl": {
+      "version": "0.1.3",
+      "vcsRevision": "f2f963ff043a364386888f8a6cf91646cd583e99",
+      "url": "https://github.com/andreaferretti/nimcl",
+      "downloadMethod": "git",
+      "dependencies": [
+        "opencl"
+      ],
+      "checksums": {
+        "sha1": "fb304e3b75503fb359ffe649d019a2fac7e2b3dc"
+      }
+    },
+    "clblast": {
+      "version": "0.0.2",
+      "vcsRevision": "cdadb10dd85b95c9e7248f0b9661ad1e7616efe6",
+      "url": "https://github.com/numforge/nim-clblast",
+      "downloadMethod": "git",
+      "dependencies": [
+        "opencl"
+      ],
+      "checksums": {
+        "sha1": "0b4514b483f83492c49bb0629e5b45ffdf8e7aa3"
+      }
+    },
+    "stb_image": {
+      "version": "2.5",
+      "vcsRevision": "ba5f45286bfa9bed93d8d6b941949cd6218ec888",
+      "url": "https://gitlab.com/define-private-public/stb_image-Nim.git",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "abf5fd03e72ee4c316c50a0538b973e355dcb175"
+      }
+    },
+    "zip": {
+      "version": "0.3.1",
+      "vcsRevision": "bdc5783fefc1afb8eb622ff13d464a832ce1d507",
+      "url": "https://github.com/nim-lang/zip",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "747aab3c43ecb7b50671cdd0ec3b2edc2c83494c"
+      }
+    },
+    "untar": {
+      "version": "0.1.0",
+      "vcsRevision": "b49f6ac94974fe11cb3d396a8a9c533824a497a7",
+      "url": "https://github.com/dom96/untar",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "ceb12634783156ddd511410242dc7855ae2f4a14"
+      }
+    },
+    "arraymancer": {
+      "version": "0.7.33",
+      "vcsRevision": "873ac940bd5df50e1f7d587a91eeb7cf4ebf4a7e",
+      "url": "https://github.com/mratsim/Arraymancer",
+      "downloadMethod": "git",
+      "dependencies": [
+        "nimblas",
+        "nimlapack",
+        "nimcuda",
+        "nimcl",
+        "clblast",
+        "stb_image",
+        "zip",
+        "untar"
+      ],
+      "checksums": {
+        "sha1": "c37fb5d98fce8661ade439d89d0a6a3c9d65c8fc"
+      }
+    },
+    "cppstl": {
+      "version": "0.7.0",
+      "vcsRevision": "45ca8979092e9d93a2cf68484043e64fdd5d5b79",
+      "url": "https://github.com/BigEpsilon/nim-cppstl",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "69df6807dd7af5812b7aec66c5a6f28d9e2a44e9"
+      }
+    },
+    "seqmath": {
+      "version": "0.2.2",
+      "vcsRevision": "74767bc93d5ef460a607c5224df82237cdb39ac5",
+      "url": "https://github.com/Vindaar/seqmath",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "734340a5e463353b96c988e776df8b8760c099ec"
+      }
+    },
+    "datamancer": {
+      "version": "0.5.1",
+      "vcsRevision": "ea8fa6cacd158b7e2ff9116521e0a5ee3aadc7d2",
+      "url": "https://github.com/SciNim/datamancer",
+      "downloadMethod": "git",
+      "dependencies": [
+        "seqmath",
+        "arraymancer"
+      ],
+      "checksums": {
+        "sha1": "c54db7077924522db8af5fe74f0bb850285332c6"
+      }
+    },
+    "manu": {
+      "version": "2.3.1",
+      "vcsRevision": "1e159abac3d7ce59fb17eb89d6a2a0b2267acc04",
+      "url": "https://github.com/planetis-m/manu",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "547642d4889fd3dc0b8d54f07cf2da14095616d6"
+      }
+    },
+    "nim": {
+      "version": "2.2.8",
+      "vcsRevision": "",
+      "url": "https://github.com/nim-lang/Nim.git",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "bb2aee4f676f652012fb4e8ce71ffbf03ed7e639"
+      }
+    },
+    "nimpy": {
+      "version": "0.2.1",
+      "vcsRevision": "d559f7bcb8fb877b4eae4bd116b8fbc9e16560ef",
+      "url": "https://github.com/yglukhov/nimpy",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "0e88588fb093806b3e2d9f2a4b7e507abf863958"
+      }
+    },
+    "polynumeric": {
+      "version": "0.2.1",
+      "vcsRevision": "c45ae36b3c40c3c332bcf159a6ed21ae53aab66e",
+      "url": "https://github.com/SciNim/polynumeric",
+      "downloadMethod": "git",
+      "dependencies": [
+        "arraymancer"
+      ],
+      "checksums": {
+        "sha1": "25d14a718148352a3ab9db4dc8b53bf73dc669ab"
+      }
+    },
+    "threading": {
+      "version": "0.2.1",
+      "vcsRevision": "ee77a27eca7042a2b68061d0bcee691e5b56aa10",
+      "url": "https://github.com/nim-lang/threading",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "594ec27a467847166ef78767ff60e1c87d0f743f"
+      }
+    },
+    "scinim": {
+      "version": "0.2.5",
+      "vcsRevision": "67207e89a11a62ceb671da45e8032039f20eef12",
+      "url": "https://github.com/SciNim/scinim",
+      "downloadMethod": "git",
+      "dependencies": [
+        "threading",
+        "arraymancer",
+        "polynumeric",
+        "nimpy"
+      ],
+      "checksums": {
+        "sha1": "123625cbd61116b14d229ace3cd62269e4b63f7e"
+      }
+    }
+  },
+  "tasks": {}
+}

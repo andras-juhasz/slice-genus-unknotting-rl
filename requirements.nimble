@@ -1,0 +1,13 @@
+version     = "1.0.0"
+author      = "Yutong Dai, Oliver Hayman, András Juhász, Ludovico Morellato"
+description = "Reinforcement learning for the slice genus and the unknotting number of links"
+license     = "GPLv2+"
+srcDir      = "src"
+
+requires "nim >= 2.0.8"
+requires "arraymancer >= 0.7.33"
+requires "cppstl >= 0.7.0"
+requires "datamancer >= 0.5.1"
+requires "manu >= 2.3.1"
+requires "nimpy >= 0.2.1"
+requires "scinim >= 0.2.5"

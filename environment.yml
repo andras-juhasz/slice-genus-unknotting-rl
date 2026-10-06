@@ -1,0 +1,29 @@
+# Direct Python dependencies, pinned to the versions the
+# code is tested against. conda-lock.yml is generated from
+# this file:
+#   conda-lock lock -f environment.yml -p linux-64
+name: RLKnotsEnv
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11.10
+  - sage=10.7
+  - numpy=2.3.4
+  - pandas=3.0.2
+  - matplotlib-base=3.10.1
+  - tabulate=0.10.0
+  # Java 23 or later runs KnotJob in the bounds pipeline.
+  - openjdk=23.0.1
+  # The compiled Nim libraries load PCRE at run time
+  # (Nim's std/re).
+  - pcre=8.45
+  - pip
+  - pip:
+      - gymnasium==1.2.1
+      - stable-baselines3==2.7.0
+      - sb3-contrib==2.7.0
+      - torch==2.5.1
+      - bayesian-optimization==2.0.0
+      - spherogram==2.3
+      - colorist==1.8.5
+      - dill==0.4.0
